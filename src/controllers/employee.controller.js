@@ -6,4 +6,10 @@ const addEmployee = async (req, res) => {
     return res.send(response)
 }
 
-export{addEmployee}
+const updateEmployee = async (req, res) => {
+    const response = await employeeSerice.updateEmployee(req)
+    return res.send(response)
+}
+
+
+export{addEmployee, updateEmployee}

@@ -7,6 +7,8 @@ const router = express.Router()
 
 router.post('/add', employeeController.addEmployee)
 
+router.put('/update/:employeeId', employeeController.addEmployee)
+
 
 
 
